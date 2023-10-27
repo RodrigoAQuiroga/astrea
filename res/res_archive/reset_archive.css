@@ -1,0 +1,36 @@
+@import "../res_lex/reset_lex.css";
+
+
+body{
+    background-color: #d9d5d1;
+}
+dt {
+    
+    font-weight: bold;
+}
+main p{
+    padding: 1rem;
+    margin: 0;
+}
+
+dd::before {
+    content: "* ";
+    font-weight: bolder;
+}
+dd{
+    padding: 0.5rem;
+}
+a {
+    padding: 0;
+    display: inline;
+    color: inherit;
+}
+
+
+
+dl {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem 0;
+    border: solid 1.5px;   
+}

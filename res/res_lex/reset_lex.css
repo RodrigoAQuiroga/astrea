@@ -1,0 +1,169 @@
+@import "../styles/index.css";
+
+
+
+header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+header a {
+    background-color: #ad998a;
+    padding: 0.5rem;
+    color: black;
+    font-weight: bolder;
+
+}
+
+header a:hover{
+    background-color: #948376;
+}
+
+header a::before {
+    content: "";
+}
+
+main {
+    background-color: #d9d5d1;
+}
+
+nav {
+    background-color: #ad998a;
+    color: #fff;
+}
+
+nav a::before {
+    content: " ";
+}
+
+nav div {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+nav h3 {
+    padding: 0 1.5rem;
+}
+
+#buscador {
+    display: flex;
+    flex-direction: column;
+}
+
+summary {
+    background-color: #778794;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bolder;
+}
+
+summary:hover {
+    color: black;
+    background-color: #64717c;
+}
+
+details a {
+    color: black;
+    border-bottom: solid 1px #fff;
+    margin-left: 2rem;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+details a:hover {
+    background-color: #b6b1ad;
+}
+
+details a::before {
+    content: "# ";
+}
+
+details {
+    padding: 1rem;
+}
+
+#buscador div {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+#buscador a {
+    text-align: center;
+    background-color: #545d74;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+
+#buscador a:hover{
+    background-color: #66708b;
+}
+
+.top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: solid 1px;
+    background-color: #545d74;
+    font-weight: bold;
+}
+
+.top::before {
+    content: none;
+}
+
+.top:hover {
+
+
+    border: none;
+}
+
+.top:hover::after {
+    content: " / Volver Arriba";
+}
+
+p:target::before,
+h3:target::before {
+    content: "📌 ";
+}
+
+
+hr {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+input {
+    padding: 0.5rem;
+    width: 50vw;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d9d5d1;
+    border: solid 1px #778794;
+
+}
+
+main h3 {
+    text-align: center;
+}
+
+main p {
+    margin: 0 2rem;
+    padding: 1rem;
+
+}

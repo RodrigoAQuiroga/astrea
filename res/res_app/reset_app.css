@@ -1,0 +1,25 @@
+@import "../res_archive/reset_archive.css";
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+button{
+border: none;
+background-color: #778794;
+padding: 0.5rem 1rem;
+font-weight: bold;
+margin: 0.5rem;
+cursor: pointer;
+border-radius: 0 0.5rem;
+}
+button:hover{
+   
+    background-color: #8699a8;
+
+    }
