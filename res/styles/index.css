@@ -49,8 +49,11 @@ summary {
 .hideShow a:hover,
 summary:hover {
     background-color: #b6b1ad;
+    font-weight: bold;
 }
-
+details[open] summary{
+    font-weight: bold;
+}
 
 
 #items div:target {
@@ -117,7 +120,7 @@ details {
 
 summary {
     margin-bottom: 0.5rem;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 p {

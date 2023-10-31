@@ -8,21 +8,43 @@ header {
     padding: 1rem;
 }
 
+.top,
 header a {
-    background-color: #ad998a;
+    position: fixed;
+    margin: 1rem;
     padding: 0.5rem;
-    color: black;
-    font-weight: bolder;
-
+    border-radius: 0.5rem;
+    border: solid 1px;
+    background-color: #545d74;
+    font-weight: bold;
 }
 
-header a:hover{
-    background-color: #948376;
+header a {
+    bottom: 0;
+    left: 0;
+}
+
+
+header a:hover, .top:hover {
+    background-color: #444c5f;
 }
 
 header a::before {
-    content: "";
+    content: "Home";
 }
+
+
+.top {
+    bottom: 0;
+    right: 0;
+}
+
+.top::before {
+    content: "Índice";
+}
+
+
+
 
 main {
     background-color: #d9d5d1;
@@ -31,7 +53,9 @@ main {
 nav {
     background-color: #ad998a;
     color: #fff;
+
 }
+
 
 nav a::before {
     content: " ";
@@ -105,35 +129,11 @@ details {
     font-weight: bold;
 }
 
-#buscador a:hover{
+#buscador a:hover {
     background-color: #66708b;
 }
 
-.top {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: solid 1px;
-    background-color: #545d74;
-    font-weight: bold;
-}
 
-.top::before {
-    content: none;
-}
-
-.top:hover {
-
-
-    border: none;
-}
-
-.top:hover::after {
-    content: " / Volver Arriba";
-}
 
 p:target::before,
 h3:target::before {

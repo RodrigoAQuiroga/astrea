@@ -20,12 +20,6 @@ dd::before {
 dd{
     padding: 0.5rem;
 }
-a {
-    padding: 0;
-    display: inline;
-    color: inherit;
-}
-
 
 
 dl {

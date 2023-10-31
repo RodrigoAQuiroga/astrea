@@ -1,6 +1,6 @@
 @import "../res_archive/reset_archive.css";
 
-#inputs{
+#inputs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,17 +9,17 @@
 
 
 
-button{
-border: none;
-background-color: #778794;
-padding: 0.5rem 1rem;
-font-weight: bold;
-margin: 0.5rem;
-cursor: pointer;
-border-radius: 0 0.5rem;
+button {
+    border: none;
+    background-color: #778794;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    cursor: pointer;
 }
-button:hover{
-   
-    background-color: #8699a8;
 
-    }
+button:hover {
+    background-color: #8699a8;
+}
