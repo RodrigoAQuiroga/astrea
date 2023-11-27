@@ -38,7 +38,14 @@ header a::before {
     content: "Subir";
 }
 
-
+#myBtn{
+    margin-top: 1rem;
+    padding: 1rem;
+   
+}
+nav input{
+    margin-top: 0.5rem;
+}
 
 nav a::before {
     content: " ";
