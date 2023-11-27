@@ -9,7 +9,7 @@ function arts(x) {
 function defaultOp() {
     var x = document.getElementById('txt');
     x.addEventListener('input', function () {
-        document.getElementById("myBtn").innerHTML = "Buscar Art. " + x.value
+        document.getElementById("spn").innerHTML = "Buscar Art. " + x.value
     });
     x.addEventListener('input', function () {
         document.getElementById("myBtn").setAttribute("href", "#art" + x.value)
