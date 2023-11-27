@@ -1,11 +1,8 @@
-@import "../styles/index.css";
+@import "../styles/style.css";
 
 
-
-header {
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
+nav {
+    position: inherit;
 }
 
 .top,
@@ -15,59 +12,39 @@ header a {
     padding: 0.5rem;
     border-radius: 0.5rem;
     border: solid 1px;
-    background-color: #545d74;
-    font-weight: bold;
+
 }
 
 header a {
     bottom: 0;
     left: 0;
-}
+    background-color: var(--dark);
+    color: var(--warning);
 
-
-header a:hover, .top:hover {
-    background-color: #444c5f;
 }
 
 header a::before {
-    content: "Home";
+    content: "Volver";
 }
-
 
 .top {
     bottom: 0;
     right: 0;
+    background-color: var(--dark);
+    color: var(--warning);
 }
 
 .top::before {
-    content: "Índice";
+    content: "Subir";
 }
 
-
-
-
-main {
-    background-color: #d9d5d1;
-}
-
-nav {
-    background-color: #ad998a;
-    color: #fff;
-
-}
 
 
 nav a::before {
     content: " ";
 }
 
-nav div {
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 
-}
 
 nav h3 {
     padding: 0 1.5rem;
@@ -78,39 +55,55 @@ nav h3 {
     flex-direction: column;
 }
 
-summary {
-    background-color: #778794;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bolder;
-}
 
-summary:hover {
-    color: black;
-    background-color: #64717c;
-}
-
-details a {
-    color: black;
-    border-bottom: solid 1px #fff;
-    margin-left: 2rem;
-    padding: 0.3rem;
-    font-weight: bold;
-}
-
-details a:hover {
-    background-color: #b6b1ad;
-}
-
-details a::before {
-    content: "# ";
-}
-
-details {
+nav details {
+    text-align: justify;
     padding: 1rem;
 }
+
+summary::before {
+    content: "+ ";
+    font-weight: 700;
+
+}
+
+details[open] summary::before {
+    content: "- ";
+    font-weight: 700;
+
+
+}
+
+summary {
+    border: solid 1px var(--gray);
+     display: block;
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 1rem;
+    border-top-left-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+details div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    
+   }
+
+details div div {
+    border-top: solid 1px var(--gray);
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+
+details a::before {
+    content: "#";
+    font-weight: 200;
+    font-size: large;
+}
+
 
 #buscador div {
     display: flex;
@@ -122,48 +115,30 @@ details {
 
 #buscador a {
     text-align: center;
-    background-color: #545d74;
     padding: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 0.2rem;
-    font-weight: bold;
+   
 }
-
-#buscador a:hover {
-    background-color: #66708b;
-}
-
 
 
 p:target::before,
 h3:target::before {
-    content: "📌 ";
+    content: "# ";
+    font-weight: 900;
+    font-size: x-large;
+    color: var(--warning);
 }
 
-
-hr {
-    margin: auto;
-    width: 50%;
-    text-align: center;
+p:target {
+    border-top: solid var(--warning);
+    scroll-margin-top: 5rem;
 }
 
-input {
-    padding: 0.5rem;
-    width: 50vw;
-    border: none;
-    text-align: center;
-    font-weight: bold;
-    background-color: #d9d5d1;
-    border: solid 1px #778794;
-
-}
 
 main h3 {
     text-align: center;
+    margin: 2rem 0;
 }
 
 main p {
-    margin: 0 2rem;
-    padding: 1rem;
-
+    margin: 2rem 1rem;   
 }

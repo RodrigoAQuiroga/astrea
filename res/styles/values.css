@@ -1,0 +1,258 @@
+:root {
+
+    /*Light BS*/
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --black: #000;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+
+    --primary-text-emphasis: #052c65;
+    --secondary-text-emphasis: #2b2f32;
+    --success-text-emphasis: #0a3622;
+    --info-text-emphasis: #055160;
+    --warning-text-emphasis: #664d03;
+    --danger-text-emphasis: #58151c;
+    --light-text-emphasis: #495057;
+    --dark-text-emphasis: #495057;
+    --primary-bg-subtle: #cfe2ff;
+    --secondary-bg-subtle: #e2e3e5;
+    --success-bg-subtle: #d1e7dd;
+    --info-bg-subtle: #cff4fc;
+    --warning-bg-subtle: #fff3cd;
+    --danger-bg-subtle: #f8d7da;
+    --light-bg-subtle: #fcfcfd;
+    --dark-bg-subtle: #ced4da;
+    --primary-border-subtle: #9ec5fe;
+    --secondary-border-subtle: #c4c8cb;
+    --success-border-subtle: #a3cfbb;
+    --info-border-subtle: #9eeaf9;
+    --warning-border-subtle: #ffe69c;
+    --danger-border-subtle: #f1aeb5;
+    --light-border-subtle: #e9ecef;
+    --dark-border-subtle: #adb5bd;
+
+    --body-color: #212529;
+    --body-bg: #fff;
+    --emphasis-color: #000;
+    --secondary-color: rgba(33, 37, 41, 0.75);
+    --secondary-bg: #e9ecef;
+    --tertiary-color: rgba(33, 37, 41, 0.5);
+    --tertiary-bg: #f8f9fa;
+    --link-color: #0d6efd;
+    --link-hover-color: #0a58ca;
+    --code-color: #d63384;
+    --highlight-color: #212529;
+    --highlight-bg: #fff3cd;
+    --border-color: #dee2e6;
+    --border-color-translucent: rgba(0, 0, 0, 0.175);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    --box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    --focus-ring-color: rgba(13, 110, 253, 0.25);
+    --form-valid-color: #198754;
+    --form-valid-border-color: #198754;
+    --form-invalid-color: #dc3545;
+    --form-invalid-border-color: #dc3545;
+
+    /*Dark BS*/
+
+    --darker-body-color: #dee2e6;
+    --darker-body-bg: #212529;
+    --darker-emphasis-color: #fff;
+    --darker-secondary-color: rgba(222, 226, 230, 0.75);
+    --darker-secondary-bg: #343a40;
+    --darker-tertiary-color: rgba(222, 226, 230, 0.5);
+    --darker-tertiary-bg: #2b3035;
+    --darker-primary-text-emphasis: #6ea8fe;
+    --darker-secondary-text-emphasis: #a7acb1;
+    --darker-success-text-emphasis: #75b798;
+    --darker-info-text-emphasis: #6edff6;
+    --darker-warning-text-emphasis: #ffda6a;
+    --darker-danger-text-emphasis: #ea868f;
+    --darker-light-text-emphasis: #f8f9fa;
+    --darker-dark-text-emphasis: #dee2e6;
+    --darker-primary-bg-subtle: #031633;
+    --darker-secondary-bg-subtle: #161719;
+    --darker-success-bg-subtle: #051b11;
+    --darker-info-bg-subtle: #032830;
+    --darker-warning-bg-subtle: #332701;
+    --darker-danger-bg-subtle: #2c0b0e;
+    --darker-light-bg-subtle: #343a40;
+    --darker-dark-bg-subtle: #1a1d20;
+    --darker-primary-border-subtle: #084298;
+    --darker-secondary-border-subtle: #41464b;
+    --darker-success-border-subtle: #0f5132;
+    --darker-info-border-subtle: #087990;
+    --darker-warning-border-subtle: #997404;
+    --darker-danger-border-subtle: #842029;
+    --darker-light-border-subtle: #495057;
+    --darker-dark-border-subtle: #343a40;
+    --darker-heading-color: inherit;
+    --darker-link-color: #6ea8fe;
+    --darker-link-hover-color: #8bb9fe;
+    --darker-code-color: #e685b5;
+    --darker-highlight-color: #dee2e6;
+    --darker-highlight-bg: #664d03;
+    --darker-border-color: #495057;
+    --darker-border-color-translucent: rgba(255, 255, 255, 0.15);
+    --darker-form-valid-color: #75b798;
+    --darker-form-valid-border-color: #75b798;
+    --darker-form-invalid-color: #ea868f;
+    --darker-form-invalid-border-color: #ea868f;
+
+    /*Font*/
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--dark);
+    padding-bottom: 5rem;
+}
+
+main,
+header, footer {
+    padding: 2rem;
+}
+
+header{
+    background-color: var(--black);
+    color: var(--light);
+    text-align: center;
+}
+
+main, footer {    
+    background-color: var(--dark);
+    color: var(--light);    
+}
+
+nav {   
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    padding: 1rem;    
+    overflow: auto;    
+    text-align: center;
+    background-color: #212529ef; 
+    color: var(--light);     
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+
+
+h2{
+    color: var(--warning);
+    font-weight: 400;
+}
+
+main p,
+main li,
+main a,
+footer p,
+footer li,
+footer a  {
+    margin-bottom: 1rem;
+}
+
+
+
+main a, header a {
+    text-decoration: none;
+    line-height: 2rem;    
+}
+
+a {   
+    color: var(--orange); 
+    font-weight: 400;   
+    cursor: pointer;
+}
+
+main p, footer p{
+    text-indent: 1rem;
+    line-height: 2.2rem;  
+}
+a:hover {
+    border-bottom: solid 1px;   
+}
+
+
+input {
+    padding: 0.5rem;
+    width: 50vw;
+    border: none;
+    text-align: center;
+    font-weight: bold;    
+    border: solid 1px #778794;
+
+}
+
+main h3, footer h3{
+    background-color: #0000008a;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+main details {
+    margin-bottom: 1rem;
+}
+
+main summary{
+    border: solid 1px var(--gray);
+}
+
+main summary:hover {
+    color: var(--gray);
+}
+
+
+
+details div{
+    border: solid 1px var(--gray);
+    border-top: none;
+}
+
+
+footer{
+    border-top: solid 1px var(--gray);
+}

@@ -1,0 +1,89 @@
+@import url(values.css);
+
+.hide:target,
+.show:target {
+    scroll-margin-top: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.hide:target {
+    display: block;
+}
+
+.hide:target~.show {
+    display: none;
+}
+
+.card {
+    scroll-margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.card-h {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 1rem;
+    border-top-left-radius: 0.5rem;
+    border: solid 1px var(--gray);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: solid 1px var(--gray);
+    border-bottom-right-radius: 0.5rem;
+    border-top: none;
+}
+
+.card-container hr {
+    width: 50dvw;
+    background-color: rgba(0, 0, 0, 0.13);
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.card-container a {
+    margin: 0 2rem;
+}
+
+nav {
+    border-bottom: solid 1px var(--gray);
+}
+
+#cita {
+    font-style: italic;
+    padding: 1rem;
+}
+
+#ref {
+    text-align: end;
+    color: #aaa;
+}
+
+#ref::before {
+    content: "—"
+}
+
+#img {
+    margin-top: 2rem;
+}
+
+footer img {
+    margin: auto;
+    display: block;
+}
+
+footer div p {
+    margin: 0.5rem;
+    font-style: italic;
+}
+
+footer b {
+    font-weight: 600;
+}
