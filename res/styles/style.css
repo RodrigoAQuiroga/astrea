@@ -87,3 +87,14 @@ footer div p {
 footer b {
     font-weight: 600;
 }
+
+#descr::before {
+    content: "# ";
+    font-weight: 900;
+    font-size: x-large;
+    color: var(--warning);    
+}
+#descr{
+    font-style: italic;
+    color: var(--warning);
+}

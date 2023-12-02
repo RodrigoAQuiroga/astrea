@@ -7,14 +7,23 @@ function arts(x) {
 }
 
 function defaultOp() {
-    var x = document.getElementById('txt');
+    var x = document.getElementById("searcher");
     x.addEventListener('input', function () {
         document.getElementById("spn").innerHTML = "Buscar Art. " + x.value
     });
     x.addEventListener('input', function () {
-        document.getElementById("myBtn").setAttribute("href", "#art" + x.value)
+        document.getElementById("spn").setAttribute("href", "#art" + x.value)
     });    
 }
 
 
+function mySearcher() {
+    var x = document.getElementById("searcher");
+    var a = "#art" + x.value
 
+    console.log(a)
+    document.querySelector(a).scrollIntoView();
+    document.querySelector(a).className = "found"
+
+
+}

@@ -1,5 +1,9 @@
 @import "../styles/style.css";
 
+* {
+    scroll-margin-top: 2rem;
+
+}
 
 nav {
     position: inherit;
@@ -38,12 +42,13 @@ header a::before {
     content: "Subir";
 }
 
-#myBtn{
+#myBtn {
     margin-top: 1rem;
     padding: 1rem;
-   
+
 }
-nav input{
+
+nav input {
     margin-top: 0.5rem;
 }
 
@@ -83,7 +88,7 @@ details[open] summary::before {
 
 summary {
     border: solid 1px var(--gray);
-     display: block;
+    display: block;
     background-color: rgba(0, 0, 0, 0.315);
     padding: 1rem;
     border-top-left-radius: 0.5rem;
@@ -96,8 +101,8 @@ details div {
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
-    
-   }
+
+}
 
 details div div {
     border-top: solid 1px var(--gray);
@@ -123,12 +128,13 @@ details a::before {
 #buscador a {
     text-align: center;
     padding: 0.5rem;
-   
+
 }
 
 
 p:target::before,
-h3:target::before {
+h3:target::before,
+.found::before {
     content: "# ";
     font-weight: 900;
     font-size: x-large;
@@ -147,5 +153,10 @@ main h3 {
 }
 
 main p {
-    margin: 2rem 1rem;   
+    margin: 2rem 1rem;
+}
+
+.found {
+    border-top: solid 1px var(--warning);
+    padding-top: 1.5rem;
 }
