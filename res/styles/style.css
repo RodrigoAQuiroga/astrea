@@ -16,40 +16,40 @@ nav {
 @keyframes blink {
 
     0%,
-    10% {
-        color: transparent;
-    }
-
     20% {
-        content: " educación";
-        color: var(--acento);
+        color: transparent;
     }
 
     30% {
-        color: transparent;
-
+        content: " investigar";
+        color: var(--acento);
     }
 
     40% {
-        content: " información";
-        color: var(--acento);
+        color: transparent;
+
     }
 
     50% {
-        color: transparent;
-    }
-
-    60% {
-        content: " conciencia";
+        content: " enseñar";
         color: var(--acento);
     }
 
-    70% {
+    60% {
         color: transparent;
     }
 
-    80% {
-        content: " justicia";
+    70%,80% {
+        content: " servir";
+        color: var(--acento);
+    }
+
+    90%, 100% {
+        color: transparent;
+    }
+
+    /*80% {
+        content: " defender";
         color: var(--acento);
     }
 
@@ -57,7 +57,7 @@ nav {
     100% {
         color: transparent;
     }
-
+*/
 
 }
 
