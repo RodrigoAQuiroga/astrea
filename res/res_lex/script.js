@@ -14,6 +14,8 @@ function defaultOp() {
     x.addEventListener('input', function () {
         document.getElementById("spn").setAttribute("href", "#art" + x.value)
     });    
+
+    
 }
 
 
@@ -27,3 +29,5 @@ function mySearcher() {
 
 
 }
+
+

@@ -1,33 +1,51 @@
 @import "../res_lex/reset_lex.css";
 
 
-
-
+#index {
+    display: flex;
+    flex-direction: column;
+}
+p{   
+    line-height: 3rem;
+}
 
 details p {
     margin: 0;
 }
 
 dd::before {
-    content: "# ";
-    font-weight: 200;
-    font-size: large;
-    color: var(--warning);
-    
+    content: "# ";  
+    color: var(--acento);
 }
-b, dt{
-    font-weight: 600;
+dd{
+    margin: 0;
+    text-indent: 1rem;
+}
+dd::selection{
+    color: var(--acento);
 }
 
-dd {
+b,
+dt {    
+    color: var(--acento);    
+}
+dt{
+    font-weight: bold;
+}
+
+
+
+
+
+dl {  
     padding: 0.5rem;
-}
-
-
-dl {
-    padding: 1rem;
     margin: 1rem;
     border-radius: 1rem 0;
-    border: solid 1.5px;
+    border: solid 1.5px var(--acento);
 }
+
+main{
+    padding: 1rem;
+}
+
 

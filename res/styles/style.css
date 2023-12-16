@@ -1,100 +1,232 @@
-@import url(values.css);
-
-.hide:target,
-.show:target {
-    scroll-margin-top: 4rem;
-}
-
-.hide {
-    display: none;
-}
-
-.hide:target {
-    display: block;
-}
-
-.hide:target~.show {
-    display: none;
-}
-
-.card {
-    scroll-margin-top: 2rem;
-    margin-bottom: 1rem;
-}
+@import "values.css";
 
 
-.card-h {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.315);
-    padding: 1rem;
-    border-top-left-radius: 0.5rem;
-    border: solid 1px var(--gray);
-}
 
-.card-container {
+header {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    border: solid 1px var(--gray);
-    border-bottom-right-radius: 0.5rem;
-    border-top: none;
-}
-
-.card-container hr {
-    width: 50dvw;
-    background-color: rgba(0, 0, 0, 0.13);
-    margin: auto;
-    border-radius: 0.5rem;
-}
-
-.card-container a {
-    margin: 0 2rem;
+    padding: 2rem;
 }
 
 nav {
-    border-bottom: solid 1px var(--gray);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+@keyframes blink {
+
+    0%,
+    10% {
+        color: transparent;
+    }
+
+    20% {
+        content: " educación";
+        color: var(--acento);
+    }
+
+    30% {
+        color: transparent;
+
+    }
+
+    40% {
+        content: " información";
+        color: var(--acento);
+    }
+
+    50% {
+        color: transparent;
+    }
+
+    60% {
+        content: " conciencia";
+        color: var(--acento);
+    }
+
+    70% {
+        color: transparent;
+    }
+
+    80% {
+        content: " justicia";
+        color: var(--acento);
+    }
+
+    90%,
+    100% {
+        color: transparent;
+    }
+
+
+}
+
+h1::after {
+    content: " ";
+    animation: blink 10s linear infinite;
+}
+
+h1 {
+    overflow-wrap: break-word;
+    width: 100%;
+    text-wrap: balance;
+}
+
+#uno,
+#dos,
+#tres {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: dotted var(--fondo);   
+    
+    background-color: #72413117;
+}
+#tres{
+    border-bottom: none;
+}
+
+
+#buscador {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#buscador input {
+    width: max-content;
+    text-align: center;
+    border: none;
+    border-bottom: solid #ecaf2d9a;
+    padding: 0.5rem 1rem;
+    align-self: center;
+    background-color: #72413117;
+}
+
+#buscador input::placeholder {
+    color: var(--primario);
+}
+
+#seleccion {
+    border-top: solid 1px #aaa;
+    margin-top: 2rem;
+}
+
+#seleccion .card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.carrusel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+
+}
+
+.carrusel a {
+    text-wrap: nowrap;
+}
+
+
+
+
+
+
+
+.card-lex {
+    display: flex;
+    flex-direction: column;
+    background-color: #7241312f;
+    padding: 1rem;
+    margin: 0.5rem;
+
+    border-radius: 0.5rem;
+}
+
+.card-h {
+    margin: 0;
+}
+
+.card-lex-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-lex-content a {
+    flex-basis: 40%;
+    text-wrap: balance;
+}
+
+
+
+
+
+.card-docs {
+    background-color: #7241312f;
+    margin: 0.5rem;
+    padding: 2rem 1rem;
+    border-radius: 0.2rem 1rem;
+}
+
+.card-docs-content {
+    font-style: italic;
+    text-wrap: balance;
+    text-indent: 0.5rem;
+
+}
+
+
+
+div p {
+    color: #ecaf2d98;
+}
+
+h4 {
+    color: var(--primario);
+}
+
+footer {
+    border-top: solid 1px #724131b0;
+
+}
+
+#footer-datos {
+    padding: 2rem;
+}
+
+footer p {
+    color: var(--primario);
+}
+
+footer h3,
+footer b {
+    color: #91523d;
+}
+
+#footer-cita {
+    text-align: center;
+    background-color: #72413117;
+    padding: 2rem;
 }
 
 #cita {
+    text-align: left;
     font-style: italic;
-    padding: 1rem;
+}
+
+#cita p {
+    color: #ecaf2dc7;
+    text-wrap: balance;
+    margin-bottom: 2rem;
 }
 
 #ref {
     text-align: end;
-    color: #aaa;
-}
-
-#ref::before {
-    content: "—"
-}
-
-#img {
-    margin-top: 2rem;
-}
-
-footer img {
-    margin: auto;
-    display: block;
-}
-
-footer div p {
-    margin: 0.5rem;
-    font-style: italic;
-}
-
-footer b {
-    font-weight: 600;
-}
-
-#descr::before {
-    content: "# ";
-    font-weight: 900;
-    font-size: x-large;
-    color: var(--warning);    
-}
-#descr{
-    font-style: italic;
-    color: var(--warning);
+    color: #ecaf2dc7;
+    font-weight: bold;
 }

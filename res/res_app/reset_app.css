@@ -2,27 +2,28 @@
 
 #inputs {
     text-align: center;
+    
 }
-
-input {
+input{
+    padding: 1rem;
     margin-bottom: 1rem;
 }
 
 
 button {
     border: none;
-    background-color: #7787946b;
-    padding: 1rem;
+    background-color: var(--secundario);
+    padding: 0.5rem;
     font-weight: 800;    
     display: block;
-    width: 50dvw;
+    width: 40%;
     margin: auto;
     cursor: pointer;
-    border-radius: 0.2rem;
-    color: var(--light);
+    border-radius: 0.2rem;    
 
 }
 
 button:hover {
-    background-color: #8699a8;
+    color: var(--acento);
+    border-bottom: solid var(--acento);
 }

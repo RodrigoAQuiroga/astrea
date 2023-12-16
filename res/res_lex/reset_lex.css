@@ -1,29 +1,56 @@
-@import "../styles/style.css";
+@import "../styles/values.css";
 
 * {
     scroll-margin-top: 2rem;
 
 }
 
-nav {
-    position: inherit;
+body {
+    background-color: var(--fondo);
+
 }
+
+header {
+    padding: 1rem;
+    text-align: center;
+    color: #ecb12d;
+}
+
+h1 {
+    color: #ecb12d;
+}
+
+h2 {
+    color: #ec9837;
+}
+
+nav h3 {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 
 .top,
 header a {
     position: fixed;
     margin: 1rem;
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    border: solid 1px;
+    font-weight: 700;
+}
+
+main {
+    background-color: #72413117;
+    border-top: dotted var(--secundario);
 
 }
 
 header a {
     bottom: 0;
     left: 0;
-    background-color: var(--dark);
-    color: var(--warning);
+    background-color: var(--fondo);
+    color: var(--acento);
 
 }
 
@@ -34,8 +61,8 @@ header a::before {
 .top {
     bottom: 0;
     right: 0;
-    background-color: var(--dark);
-    color: var(--warning);
+    background-color: var(--fondo);
+    color: var(--acento);
 }
 
 .top::before {
@@ -52,15 +79,6 @@ nav input {
     margin-top: 0.5rem;
 }
 
-nav a::before {
-    content: " ";
-}
-
-
-
-nav h3 {
-    padding: 0 1.5rem;
-}
 
 #buscador {
     display: flex;
@@ -73,41 +91,43 @@ nav details {
     padding: 1rem;
 }
 
-summary::before {
-    content: "+ ";
+summary::after {
+    content: "_ Mostrar";
     font-weight: 700;
+    color: #aaa;
 
 }
 
-details[open] summary::before {
-    content: "- ";
+details[open] summary::after {
+    content: "_ Ocultar";
     font-weight: 700;
-
-
+    color: #aaa;
 }
+
 
 summary {
-    border: solid 1px var(--gray);
+    margin: 1rem 0;    
+    cursor: help;
+    color: var(--acento);
     display: block;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: #72413117;
     padding: 1rem;
-    border-top-left-radius: 0.5rem;
-    cursor: pointer;
+    border-top-left-radius: 0.5rem;    
     font-weight: 600;
 }
+
 
 details div {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
-
 }
 
 details div div {
-    border-top: solid 1px var(--gray);
-    background-color: rgba(0, 0, 0, 0.089);
+    background-color: #72413117;
 }
+
 
 
 details a::before {
@@ -138,11 +158,11 @@ h3:target::before,
     content: "# ";
     font-weight: 900;
     font-size: x-large;
-    color: var(--warning);
+    color: var(--acento);
 }
 
 p:target {
-    border-top: solid var(--warning);
+    border-top: solid var(--acento);
     scroll-margin-top: 5rem;
 }
 
@@ -150,13 +170,19 @@ p:target {
 main h3 {
     text-align: center;
     margin: 2rem 0;
+    color: #ec9837;
+    background-color: var(--fondo);
+    padding: 1rem;
 }
 
 main p {
-    margin: 2rem 1rem;
+    margin: 2rem 2rem;
+    text-indent: 1rem;
+    line-height: 3rem;
+    color: var(--texto);
 }
 
 .found {
-    border-top: solid 1px var(--warning);
+    border-top: solid 1px var(--acento);
     padding-top: 1.5rem;
 }
