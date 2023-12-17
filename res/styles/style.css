@@ -87,30 +87,6 @@ h1 {
 }
 
 
-#buscador {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-#buscador input {
-    width: max-content;
-    text-align: center;
-    border: none;
-    border-bottom: solid #ecaf2d9a;
-    padding: 0.5rem 1rem;
-    align-self: center;
-    background-color: #72413117;
-}
-
-#buscador input::placeholder {
-    color: var(--primario);
-}
-
-#seleccion {
-    border-top: solid 1px #aaa;
-    margin-top: 2rem;
-}
 
 #seleccion .card {
     display: flex;
@@ -188,6 +164,8 @@ div p {
 
 h4 {
     color: var(--primario);
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 footer {
