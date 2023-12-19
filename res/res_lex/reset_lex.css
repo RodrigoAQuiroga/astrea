@@ -184,6 +184,9 @@ main p {
     line-height: 3rem;
     color: var(--texto);
 }
+main p:hover{
+    color: var(--acento);
+}
 
 .found {
     border-top: solid 1px var(--acento);
