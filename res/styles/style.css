@@ -1,17 +1,57 @@
-@import "values.css";
-
-
+@import "reset.css";
 
 header {
-    display: flex;
-    padding: 2rem;
-}
-
-nav {
-    padding: 1rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
     text-align: center;
 }
 
+
+h3 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0;
+    text-wrap: balance;
+}
+
+nav {
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    padding: 0.5rem;
+    top: 0;
+    position: -webkit-sticky;
+}
+
+article:target {
+    scroll-margin-top: 2rem;
+}
+
+nav a {
+    color: orange;
+}
+
+nav a:hover {
+    color: white;
+}
+
+h1 {
+    font-family: monospace;
+}
 
 @keyframes blink {
 
@@ -21,8 +61,8 @@ nav {
     }
 
     30% {
-        content: " investigar";
-        color: var(--acento);
+        content: "aprender;";
+        color: orange;
     }
 
     40% {
@@ -31,180 +71,202 @@ nav {
     }
 
     50% {
-        content: " enseñar";
-        color: var(--acento);
+        content: "enseñar;";
+        color: orange;
     }
 
     60% {
         color: transparent;
     }
 
-    70%,80% {
-        content: " servir";
-        color: var(--acento);
-    }
-
-    90%, 100% {
-        color: transparent;
-    }
-
-    /*80% {
-        content: " defender";
-        color: var(--acento);
+    70%,
+    80% {
+        content: "servir;";
+        color: orange;
     }
 
     90%,
     100% {
         color: transparent;
     }
-*/
+
+
 
 }
 
 h1::after {
-    content: " ";
+    content: "";
     animation: blink 10s linear infinite;
+    font-weight: normal;
+    font-family: monospace;
+    -o-animation: blink 10s linear infinite;
+    -moz-animation: blink 10s linear infinite;
+    -webkit-animation: blink 10s linear infinite;
+
+
+
 }
 
-h1 {
-    overflow-wrap: break-word;
-    width: 100%;
-    text-wrap: balance;
-}
-
-#uno,
-#dos,
-#tres {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    border-bottom: dotted var(--fondo);   
-    
+body {
     background-color: #72413117;
-}
-#tres{
-    border-bottom: none;
-}
-
-
-
-#seleccion .card {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.carrusel {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
 
 }
 
-.carrusel a {
-    text-wrap: nowrap;
+main {
+    background-color: #72413117;
+
 }
-
-
-
-
-
-
 
 .card-lex {
-    display: flex;
-    flex-direction: column;
-    background-color: #7241312f;
-    padding: 1rem;
-    margin: 0.5rem;
-
-    border-radius: 0.5rem;
-}
-
-.card-h {
-    margin: 0;
+    overflow: auto;
+    max-height: 51dvh;
+    padding: 0;
+    margin: 1rem;
+    margin-right: 1.5rem;
 }
 
 .card-lex-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: grid;
+    border: solid 1px rgba(0, 0, 0, 0.384);
+    border-radius: 0.5rem;
 }
 
 .card-lex-content a {
-    flex-basis: 40%;
-    text-wrap: balance;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.384);
+
+
 }
 
+.card-lex-content h4 {
+    background-color: rgb(0, 0, 0);
+    color: orange;
+    border: none;
+    border-top-left-radius: 0.45rem;
+    border-top-right-radius: 0.45rem;
+    padding: 1rem;
+    margin: 0;
 
+}
 
+.card-lex-content a:hover {
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    color: orange;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
 
+.card-lex-content a:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 0.45rem;
+    border-bottom-right-radius: 0.45rem;
+
+}
 
 .card-docs {
-    background-color: #7241312f;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 0.4rem;
+    margin: 1rem;
+    text-align: right;
+    border: solid 1px;
+}
+
+.card-docs h4 {
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    color: orange;
+    border-top-left-radius: 0.35rem;
+    border-top-right-radius: 0.35rem;
+}
+
+.card-docs a {
+    padding: 0.5rem 1rem;
+    background-color: black;
     margin: 0.5rem;
-    padding: 2rem 1rem;
-    border-radius: 0.2rem 1rem;
+    display: inline-block;
+    color: orange;
+    border-radius: 0.2rem;
 }
 
-.card-docs-content {
-    font-style: italic;
-    text-wrap: balance;
-    text-indent: 0.5rem;
-
+.card-docs a:hover {
+    color: #f1f1f1;
 }
 
+.card-docs-content p {
+    padding: 2rem;
+    text-align: justify;
+    font-weight: normal;
 
-
-div p {
-    color: #ecaf2d98;
-}
-
-h4 {
-    color: var(--primario);
-    text-align: center;
-    font-size: 1.2rem;
 }
 
 footer {
-    border-top: solid 1px #724131b0;
+    background-color: black;
+    color: #f1f1f1;
+}
+
+
+
+footer h3 {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.39);
+    border-top: solid 1px rgba(255, 255, 255, 0.39);
+    margin-bottom: 0;
 
 }
 
-#footer-datos {
-    padding: 2rem;
+footer div {
+    padding: 1rem;
 }
 
-footer p {
-    color: var(--primario);
+footer a {
+    color: orange;
+    font-weight: bold;
 }
 
-footer h3,
-footer b {
-    color: #91523d;
+
+#contacto {
+    line-height: 2rem;
+    margin: 1rem;
+    margin-bottom: 0;
 }
 
-#footer-cita {
-    text-align: center;
-    background-color: #72413117;
-    padding: 2rem;
+
+#contacto a {
+    margin: 0;
+    padding: 0;
+}
+
+#contacto a:hover {
+    background-color: none;
+    padding: 0.5rem;
+
+}
+
+#info p {
+    margin: 1rem;
+    color: orange;
 }
 
 #cita {
-    text-align: left;
-    font-style: italic;
+    background-color: #ffffff09;
+    background-image: url(/res/img/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #cita p {
-    color: #ecaf2dc7;
-    text-wrap: balance;
-    margin-bottom: 2rem;
+    font-family: monospace;
+    background-color: #000000cb;
+    margin: 1rem;
+
 }
 
 #ref {
     text-align: end;
-    color: #ecaf2dc7;
+    margin: 1rem;
+    color: #f1f1f198;
     font-weight: bold;
 }

@@ -1,4 +1,4 @@
-@import "../styles/values.css";
+@import "../styles/reset.css";
 
 * {
     scroll-margin-top: 2rem;
@@ -6,133 +6,91 @@
 }
 
 body {
-    background-color: var(--fondo);
+    background-color: #72413117;
 
 }
 
+
 header {
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     color: #ecb12d;
+    background-color: #000;
 }
 
 h1 {
     color: #ecb12d;
+
 }
 
 h2 {
     color: #ec9837;
+    font-weight: normal;
 }
 
 nav h3 {
     display: block;
-    margin: auto;
     padding: 1rem;
+    color: #f1f1f1;
     margin-bottom: 0.5rem;
-}
-
-
-.top,
-header a {
-    position: fixed;
-    margin: 1rem;
-    padding: 0.5rem;
-    font-weight: 700;
-}
-
-main {
-    background-color: #72413117;
-    border-top: dotted var(--secundario);
-
-}
-
-header a {
-    bottom: 0;
-    left: 0;
-    background-color: var(--fondo);
-    color: var(--acento);
-
-}
-
-header a::before {
-    content: "Volver";
-}
-
-.top {
-    bottom: 0;
-    right: 0;
-    background-color: var(--fondo);
-    color: var(--acento);
-}
-
-.top::before {
-    content: "Subir";
-}
-
-#myBtn {
-    margin-top: 1rem;
-    padding: 1rem;
-
+    background-color: #000;
 }
 
 nav input {
     margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
 }
-
-
-#buscador {
-    display: flex;
-    flex-direction: column;
-}
-
 
 nav details {
     text-align: justify;
+
+}
+
+
+
+summary {
+    cursor: help;
+    color: #f1f1f1;
+    display: block;
+    background-color: #000000;
     padding: 1rem;
+    font-size: large;
+    font-weight: bold;
 }
 
 summary::after {
     content: "_ Mostrar";
-    font-weight: 700;
-    color: #aaa;
+    font-weight: normal;
+    color: orange;
 
 }
+
+details div h3 {
+    margin: 0;
+    color: orange;
+}
+
 
 details[open] summary::after {
     content: "_ Ocultar";
-    font-weight: 700;
-    color: #aaa;
-}
-
-
-summary {
-    margin: 1rem 0;    
-    cursor: help;
-    color: var(--acento);
-    display: block;
-    background-color: #72413117;
-    padding: 1rem;
-    border-top-left-radius: 0.5rem;    
-    font-weight: 600;
-}
-
-
-details div {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
+    font-weight: normal;
+    color: orange;
 }
 
 details div div {
+    display: grid;
     background-color: #72413117;
+    padding: 1rem;
 }
 
-
+details a {
+    color: #000;
+    padding: 1rem;
+    border-bottom: solid 1px #000;
+}
 
 details a::before {
     content: "#";
-    font-weight: 200;
     font-size: large;
 }
 
@@ -148,7 +106,53 @@ details a::before {
 #buscador a {
     text-align: center;
     padding: 0.5rem;
+    background-color: #000;
+    margin: 1rem;
+    color: orange;
+    border-radius: 0.4rem;
+}
 
+
+
+.top,
+header a {
+    position: fixed;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-weight: 700;
+}
+
+main {
+    background-color: #72413117;
+    border-top: solid 1px rgba(0, 0, 0, 0.171);
+    padding-bottom: 4rem;
+}
+
+
+header a {
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    color: orange;
+    border-radius: 0.4rem;
+
+}
+
+header a::before {
+    content: "Volver";
+}
+
+.top {
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    color: orange;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+}
+
+.top::before {
+    content: "Subir";
 }
 
 
@@ -158,37 +162,35 @@ h3:target::before,
     content: "# ";
     font-weight: 900;
     font-size: x-large;
-    color: var(--acento);
+    color: brown;
 }
 
 p:target {
-    border-top: solid var(--acento);
+    border-top: solid orange;
     scroll-margin-top: 5rem;
 }
-
 
 main h3 {
     text-align: center;
     margin: 0;
     color: #ec9837;
-    background-color: var(--fondo);
+    background-color: #000;
     padding: 1rem;
 }
-main h3:first-child{
-    margin-top: 2rem;
-}
+
+
 
 main p {
-    margin: 2rem 2rem;
+    margin: 1rem 2rem;
     text-indent: 1rem;
-    line-height: 3rem;
-    color: var(--texto);
-}
-main p:hover{
-    color: var(--acento);
+    line-height: 2rem;
+    font-weight: 500;
+
 }
 
+
+
 .found {
-    border-top: solid 1px var(--acento);
+    border-top: solid 1px brown;
     padding-top: 1.5rem;
 }
