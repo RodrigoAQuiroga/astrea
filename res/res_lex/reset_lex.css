@@ -43,7 +43,9 @@ nav input {
 
 nav details {
     text-align: justify;
-
+    max-height: 50dvh;
+    overflow: auto;
+    margin: 1rem;
 }
 
 
@@ -120,6 +122,7 @@ header a {
     margin: 1rem;
     padding: 0.5rem;
     font-weight: 700;
+    border: solid 2px orange;
 }
 
 main {
@@ -149,6 +152,7 @@ header a::before {
     color: orange;
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
+   
 }
 
 .top::before {

@@ -117,6 +117,10 @@ main {
 
 }
 
+a{
+    font-weight: 500;
+}
+
 .card-lex {
     overflow: auto;
     max-height: 51dvh;
@@ -199,7 +203,7 @@ main {
 .card-docs-content p {
     padding: 2rem;
     text-align: justify;
-    font-weight: normal;
+    font-weight: 500;
 
 }
 
