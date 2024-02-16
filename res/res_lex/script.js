@@ -13,9 +13,9 @@ function defaultOp() {
     });
     x.addEventListener('input', function () {
         document.getElementById("spn").setAttribute("href", "#art" + x.value)
-    });    
+    });
 
-    
+
 }
 
 
@@ -25,9 +25,10 @@ function mySearcher() {
 
     console.log(a)
     document.querySelector(a).scrollIntoView();
-    document.querySelector(a).className = "found"
-
+    document.querySelector(a).className = "found";
 
 }
+
+
 
 

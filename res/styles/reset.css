@@ -130,10 +130,7 @@ summary {
    background-color: var(--black);
    padding: 1rem;
    font-size: large;
-   font-weight: bold;
-   position: sticky;
-   position: -webkit-sticky;
-   top: 0;
+   font-weight: bold;   
    text-align: start;
 }
 
