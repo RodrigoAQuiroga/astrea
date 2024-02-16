@@ -5,103 +5,19 @@
 
 }
 
-body {
-    background-color: #72413117;
-
-}
-
-
-header {
-    padding: 2rem;
-    text-align: center;
-    color: #ecb12d;
-    background-color: #000;
-}
-
-h1 {
-    color: #ecb12d;
-
-}
-
-h2 {
-    color: #ec9837;
-    font-weight: normal;
-}
-
-nav h3 {
-    display: block;
-    padding: 1rem;
-    color: #f1f1f1;
-    margin-bottom: 0.5rem;
-    background-color: #000;
-}
-
-nav input {
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-}
-
-nav details {
-    text-align: justify;
-    max-height: 50dvh;
-    overflow: auto;
-    margin: 1rem;
-}
-
-
-
-summary {
-    cursor: help;
-    color: #f1f1f1;
-    display: block;
-    background-color: #000000;
-    padding: 1rem;
-    font-size: large;
-    font-weight: bold;
-}
-
-summary::after {
-    content: "_ Mostrar";
-    font-weight: normal;
-    color: orange;
-
-}
-
-details div h3 {
-    margin: 0;
-    color: orange;
-}
-
-
-details[open] summary::after {
-    content: "_ Ocultar";
-    font-weight: normal;
-    color: orange;
-}
-
-details div div {
-    display: grid;
-    background-color: #72413117;
-    padding: 1rem;
-}
-
-details a {
-    color: #000;
-    padding: 1rem;
-    border-bottom: solid 1px #000;
-}
-
-details a::before {
-    content: "#";
-    font-size: large;
-}
-
 
 #buscador div {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
+    background-color: var(--gray);
+    margin: 0;
+    padding: 1rem;
+}
+
+#buscador h3 {
+    margin: 0;
 }
 
 
@@ -125,11 +41,6 @@ header a {
     border: solid 2px orange;
 }
 
-main {
-    background-color: #72413117;
-    border-top: solid 1px rgba(0, 0, 0, 0.171);
-    padding-bottom: 4rem;
-}
 
 
 header a {
@@ -152,7 +63,7 @@ header a::before {
     color: orange;
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
-   
+
 }
 
 .top::before {
@@ -173,26 +84,6 @@ p:target {
     border-top: solid orange;
     scroll-margin-top: 5rem;
 }
-
-main h3 {
-    text-align: center;
-    margin: 0;
-    color: #ec9837;
-    background-color: #000;
-    padding: 1rem;
-}
-
-
-
-main p {
-    margin: 1rem 2rem;
-    text-indent: 1rem;
-    line-height: 2rem;
-    font-weight: 500;
-
-}
-
-
 
 .found {
     border-top: solid 1px brown;

@@ -3,9 +3,10 @@
 header {
     background-color: black;
     color: white;
-    padding: 1rem 0;
+    padding: 3rem 0;
     text-align: center;
 }
+
 
 
 h3 {
@@ -25,6 +26,11 @@ a {
     padding: 1rem;
     margin: 0;
     text-wrap: balance;
+}
+
+nav a {
+    padding: 0;
+    margin: 0 1rem;
 }
 
 nav {
@@ -62,7 +68,7 @@ h1 {
 
     30% {
         content: "aprender;";
-        color: orange;
+        color: var(--gray);
     }
 
     40% {
@@ -72,7 +78,7 @@ h1 {
 
     50% {
         content: "enseñar;";
-        color: orange;
+        color: var(--gray);
     }
 
     60% {
@@ -82,7 +88,7 @@ h1 {
     70%,
     80% {
         content: "servir;";
-        color: orange;
+        color: var(--gray);
     }
 
     90%,
@@ -117,7 +123,7 @@ main {
 
 }
 
-a{
+a {
     font-weight: 500;
 }
 
@@ -201,7 +207,7 @@ a{
 }
 
 .card-docs-content p {
-    padding: 2rem;
+    padding: 1rem;
     text-align: justify;
     font-weight: 500;
 
@@ -255,15 +261,11 @@ footer a {
 }
 
 #cita {
-    background-color: #ffffff09;
-    background-image: url(/res/img/image.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #ffffff09;      
 }
 
 #cita p {
-    font-family: monospace;
-    background-color: #000000cb;
+    font-family: monospace;   
     margin: 1rem;
 
 }
