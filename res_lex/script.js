@@ -41,10 +41,10 @@ function createMenu() {
     divMenu.innerHTML = `<a href="../index.html">Inicio</a>
     <a class="top" href="#inicio">Subir</a>
     <span>Lector:</span>
-    <button onclick="play()">⏵</button>
-    <button onclick="stopSpeak()">⏹</button>
-    <button onclick="pause()">⏸</button>
-    <button onclick="resume()">⏯</button>
+    <button onclick="play()">▶️</button>
+    <button onclick="stopSpeak()">⏹️</button>
+    <button onclick="pause()">⏸️</button>
+    <button onclick="resume()">⏯️</button>
     `;
 
     menu.appendChild(divMenu);
