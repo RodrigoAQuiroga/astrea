@@ -1,0 +1,36 @@
+@import "../res_archive/reset_archive.css";
+
+#inputs {
+    text-align: center;
+
+}
+
+input {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+}
+
+
+button {
+    border: none;
+    background-color: #000;
+    padding: 0.5rem;    
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    color: orange;
+
+}
+
+button:hover {
+    color: #f1f1f1;
+    border-bottom: solid var(--acento);
+}
+
+main{
+    background-color: inherit;
+}

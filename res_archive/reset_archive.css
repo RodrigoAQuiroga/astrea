@@ -1,0 +1,57 @@
+@import "../res_lex/reset_lex.css";
+
+
+#index {
+    display: flex;
+    flex-direction: column;
+}
+
+dd {
+    color: #f1f1f1;
+    border-left: solid 1px orange;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-style: italic;
+}
+
+dt {
+    color: orange;
+    font-weight: bold;
+}
+
+dl {
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 1rem;
+}
+
+p a {
+    color: #f1f1f1;
+    display: inline;
+    padding: 0;
+}
+
+details {
+    color: #f1f1f1;
+
+}
+
+summary {
+    padding: 1rem;
+    color: #ccc;
+    font-weight: bold;
+    cursor: help;
+}
+
+details div:first-of-type {
+    overflow: auto;
+    max-height: 50dvh;
+    padding: 1rem;
+}
+
+details[open] summary{
+    color: orange;
+}
+main{
+    margin: 0;
+}

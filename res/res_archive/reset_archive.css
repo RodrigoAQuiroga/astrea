@@ -1,7 +1,0 @@
-@import "../res_lex/reset_lex.css";
-
-
-#index {
-    display: flex;
-    flex-direction: column;
- }
