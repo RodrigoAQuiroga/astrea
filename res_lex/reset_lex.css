@@ -174,3 +174,8 @@ p:target {
     border-top: solid 1px brown;
     padding-top: 1.5rem;
 }
+
+span{
+    font-style: italic;
+    color: orange;
+}
