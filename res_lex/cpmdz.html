@@ -11,27 +11,19 @@
     <title>Constitución Provincial - Mdz</title>
 </head>
 
-<body onload="arts(225); defaultOp(); createMenu()">
+<body onload="arts(225); defaultOp()">
     <header>
         <h1>CONSTITUCION PROVINCIAL - Mdz</h1>
         <h2>MENDOZA, 11 de Febrero de 1916 -
             Boletín Oficial, 28 de Diciembre de 1916</h2>
         <h2>Vigente, de alcance general -
             Id SAIJ: LPM0000000</h2>
+            
     </header>
+    <div id="home">
+        <a href=" /index.html">Volver a la pagina principal</a>
+    </div>
     <nav id="inicio">
-        <!--Buscador-->
-        <div id="buscador" class="tabcontent">
-            <h3>Buscador</h3>
-            <div>
-                <input type="search" id="searcher" maxlength="4" inputmode='numeric' minlength="1"
-                    onsearch="mySearcher()" placeholder="Número a buscar...">
-
-
-                <a id="spn">Buscar por artículo</a>
-
-            </div>
-        </div>
 
         <!--Indice-->
 
@@ -3235,9 +3227,28 @@
 
     </main>
     <footer>
+        <!--Buscador-->
+        <div id="buscador" class="tabcontent">
 
+            <input type="search" id="searcher" maxlength="4" inputmode='numeric' minlength="1"
+                onsearch="mySearcher()" placeholder="Número a buscar...">
+
+
+            <a id="spn">Buscar por artículo</a>
+
+
+        </div>
+
+        <div id="lector">
+            <p>Primero seleccione el texto a leer y después presione leer</p>
+            <div>
+                <button onclick="play()">Leer</button>
+                <button onclick="stopSpeak()">Parar</button>
+                <button onclick="pause()">Pausar</button>
+                <button onclick="resume()">Retomar</button>
+            </div>
+        </div>
     </footer>
-
 
 </body>
 

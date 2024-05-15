@@ -9,7 +9,7 @@ function arts(x) {
 function defaultOp() {
     var x = document.getElementById("searcher");
     x.addEventListener('input', function () {
-        document.getElementById("spn").innerHTML = "Buscar Art. " + x.value
+        document.getElementById("spn").innerText = "Buscar Art. " + x.value
     });
     x.addEventListener('input', function () {
         document.getElementById("spn").setAttribute("href", "#art" + x.value)
@@ -43,24 +43,6 @@ function pause() {
 function resume() {
     if (speechSynthesis.paused)
         speechSynthesis.resume();
-}
-
-
-function createMenu() {
-    let menu = document.querySelector("body");
-    let divMenu = document.createElement("div");
-    divMenu.setAttribute("id", "menu");
-    divMenu.innerHTML = `<a href="../index.html">Inicio</a>
-    <a class="top" href="#inicio">Subir</a>
-    <span>Lector:</span>
-    <button onclick="play()">▶️</button>
-    <button onclick="stopSpeak()">⏹️</button>
-    <button onclick="pause()">⏸️</button>
-    <button onclick="resume()">⏯️</button>
-    `;
-
-    menu.appendChild(divMenu);
-
 }
 
 

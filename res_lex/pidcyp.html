@@ -12,7 +12,7 @@
     <title>Pacto Internacional de Derechos Civiles y Políticos</title>
 </head>
 
-<body onload="arts(53); defaultOp(); createMenu()">
+<body onload="arts(53); defaultOp()">
     <header>
         <h1>Pacto Internacional de Derechos Civiles y Políticos y su Protocolo Facultativo</h1>
 
@@ -23,21 +23,12 @@
             de los Estados que han ratificado el pacto</h2>
 
     </header>
+    <div id="home">
+        <a href=" /index.html">Volver a la pagina principal</a>
+    </div>
     <nav id="inicio">
 
-        <!--Buscador-->
-        <div id="buscador" class="tabcontent">
-            <h3>Buscador</h3>
-            <div>
-                <input type="search" id="searcher" inputmode='numeric' maxlength="4" minlength="1"
-                    onsearch="mySearcher()" placeholder="Número a buscar...">
-
-
-                <a id="spn">Buscar por artículo</a>
-
-            </div>
-        </div>
-        <!--Indice-->
+  <!--Indice-->
 
         <div id="indice">
             <h3>Índice</h3>
@@ -1555,7 +1546,27 @@
 
     </main>
     <footer>
+        <!--Buscador-->
+        <div id="buscador" class="tabcontent">
 
+            <input type="search" id="searcher" maxlength="4" inputmode='numeric' minlength="1"
+                onsearch="mySearcher()" placeholder="Número a buscar...">
+
+
+            <a id="spn">Buscar por artículo</a>
+
+
+        </div>
+
+        <div id="lector">
+            <p>Primero seleccione el texto a leer y después presione leer</p>
+            <div>
+                <button onclick="play()">Leer</button>
+                <button onclick="stopSpeak()">Parar</button>
+                <button onclick="pause()">Pausar</button>
+                <button onclick="resume()">Retomar</button>
+            </div>
+        </div>
     </footer>
 
 </body>

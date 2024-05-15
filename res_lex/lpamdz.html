@@ -11,26 +11,18 @@
     <title>Ley de Procedimiento Administrativo</title>
 </head>
 
-<body onload="arts(192); defaultOp(); createMenu()">
+<body onload="arts(192); defaultOp()">
     <header>
         <h1>LEY 9.003</h1>
         <h2>MENDOZA, 6 de Septiembre de 2017 - Boletín Oficial, 19 de Septiembre de 2017</h2>
         <h2>Vigente, de alcance general - Id SAIJ: LPM0009003</h2>
+        
     </header>
+    <div id="home">
+        <a href=" /index.html">Volver a la pagina principal</a>
+    </div>
     <nav id="inicio">
-        <!--Buscador-->
-        <div id="buscador" class="tabcontent">
-            <h3>Buscador</h3>
-            <div>
-                <input type="search" id="searcher" inputmode='numeric' maxlength="4" minlength="1"
-                    onsearch="mySearcher()" placeholder="Número a buscar...">
-
-
-                <a id="spn">Buscar por artículo</a>
-
-            </div>
-        </div>
-
+      
         <!--Indice-->
         <div id="indice">
             <h3>Índice</h3>
@@ -3916,10 +3908,28 @@
 
     </main>
     <footer>
+        <!--Buscador-->
+        <div id="buscador" class="tabcontent">
 
+            <input type="search" id="searcher" maxlength="4" inputmode='numeric' minlength="1"
+                onsearch="mySearcher()" placeholder="Número a buscar...">
+
+
+            <a id="spn">Buscar por artículo</a>
+
+
+        </div>
+
+        <div id="lector">
+            <p>Primero seleccione el texto a leer y después presione leer</p>
+            <div>
+                <button onclick="play()">Leer</button>
+                <button onclick="stopSpeak()">Parar</button>
+                <button onclick="pause()">Pausar</button>
+                <button onclick="resume()">Retomar</button>
+            </div>
+        </div>
     </footer>
-
-
 
 </body>
 

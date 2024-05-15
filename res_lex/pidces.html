@@ -11,28 +11,21 @@
     <title>Pacto Internacional de Derechos Económicos, Sociales y Culturales</title>
 </head>
 
-<body onload="arts(31); defaultOp(); createMenu()">
+<body onload="arts(31); defaultOp()">
     <header>
         <h1>Pacto Internacional de Derechos Económicos, Sociales y Culturales</h1>
         <h2>Adoptado y abierto a la firma, ratificación y adhesión por la Asamblea
             General en su resolución 2200 A (XXI), de 16 de diciembre de 1966 </h2>
         <h2>Entrada en vigor: 3 de enero de 1976, de conformidad con el artículo 27</h2>
+        
 
     </header>
+    <div id="home">
+        <a href=" /index.html">Volver a la pagina principal</a>
+    </div>
     <nav id="inicio">
 
-        <!--Buscador-->
-        <div id="buscador" class="tabcontent">
-            <h3>Buscador</h3>
-            <div>
-                <input type="search" id="searcher" inputmode='numeric' maxlength="4" minlength="1"
-                    onsearch="mySearcher()" placeholder="Número a buscar...">
-
-
-                <a id="spn">Buscar por artículo</a>
-
-            </div>
-        </div>
+       
         <!--Indice-->
         <div id="indice">
             <h3>Índice</h3>
@@ -720,9 +713,28 @@
 
     </main>
     <footer>
+        <!--Buscador-->
+        <div id="buscador" class="tabcontent">
 
+            <input type="search" id="searcher" maxlength="4" inputmode='numeric' minlength="1"
+                onsearch="mySearcher()" placeholder="Número a buscar...">
+
+
+            <a id="spn">Buscar por artículo</a>
+
+
+        </div>
+
+        <div id="lector">
+            <p>Primero seleccione el texto a leer y después presione leer</p>
+            <div>
+                <button onclick="play()">Leer</button>
+                <button onclick="stopSpeak()">Parar</button>
+                <button onclick="pause()">Pausar</button>
+                <button onclick="resume()">Retomar</button>
+            </div>
+        </div>
     </footer>
-
 </body>
 
 

@@ -6,7 +6,8 @@
     flex-direction: column;
 }
 
-dd {
+dd,
+li {
     color: #f1f1f1;
     border-left: solid 1px orange;
     padding: 0.5rem;
@@ -25,22 +26,37 @@ dl {
     padding: 1rem;
 }
 
-p a {
+p a,
+sup a {
     color: #f1f1f1;
     display: inline;
     padding: 0;
 }
 
 details {
-    color: #f1f1f1;
-
+    margin: 1rem;
+    cursor: pointer;
+    border: solid 1px #16161d;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    padding-top: 0;
 }
 
 summary {
-    padding: 1rem;
-    color: #ccc;
+    list-style-type: none;
     font-weight: bold;
-    cursor: help;
+    padding: 1rem;
+    background-color: #f3f5fc;
+    color: #16161d;
+}
+
+summary:hover {
+    color: orange;
+}
+
+summary::before {
+    content: url(/icons/search.svg);
+    margin: 0.5rem;
 }
 
 details div:first-of-type {
@@ -49,9 +65,15 @@ details div:first-of-type {
     padding: 1rem;
 }
 
-details[open] summary{
-    color: orange;
+details[open] summary {
+    color: #16161d;
 }
-main{
+
+main {
+    margin: auto;
+}
+
+dd li {
+    border: none;
     margin: 0;
 }

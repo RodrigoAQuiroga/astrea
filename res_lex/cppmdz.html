@@ -11,29 +11,21 @@
   <title>Código Procesal Penal Mdz</title>
 </head>
 
-<body onload="arts(568); defaultOp(); createMenu()">
+<body onload="arts(568); defaultOp()">
   <header>
 
     <h1>CODIGO PROCESAL PENAL DE MENDOZA</h1>
     <h2>LEY 6.730</h2>
     <h2> MENDOZA, 16 de Noviembre de 1999 - Boletín Oficial, 30 de Noviembre de 1999</h2>
     <h2>Vigente, de alcance general - Id SAIJ: LPM1006730</h2>
+    
   </header>
+  <div id="home">
+    <a href=" /index.html">Volver a la pagina principal</a>
+</div>
   <nav id="inicio">
 
-    <!--Buscador-->
-    <div id="buscador" class="tabcontent">
-      <h3>Buscador</h3>
-      <div>
-        <input type="search" id="searcher" inputmode='numeric' maxlength="4" minlength="1" onsearch="mySearcher()"
-          placeholder="Número a buscar...">
-
-
-        <a id="spn">Buscar por artículo</a>
-
-      </div>
-    </div>
-
+   
 
     <!--Indice-->
 
@@ -8122,9 +8114,28 @@
 
   </main>
   <footer>
+    <!--Buscador-->
+    <div id="buscador" class="tabcontent">
 
-  </footer>
+        <input type="search" id="searcher" maxlength="4" inputmode='numeric' minlength="1"
+            onsearch="mySearcher()" placeholder="Número a buscar...">
 
+
+        <a id="spn">Buscar por artículo</a>
+
+
+    </div>
+
+    <div id="lector">
+        <p>Primero seleccione el texto a leer y después presione leer</p>
+        <div>
+            <button onclick="play()">Leer</button>
+            <button onclick="stopSpeak()">Parar</button>
+            <button onclick="pause()">Pausar</button>
+            <button onclick="resume()">Retomar</button>
+        </div>
+    </div>
+</footer>
 
 </body>
 

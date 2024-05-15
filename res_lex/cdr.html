@@ -12,7 +12,7 @@
     </title>
 </head>
 
-<body onload="arts(25); defaultOp(); createMenu()">
+<body onload="arts(25); defaultOp()">
     <header>
         <h1>Convención Internacional sobre la Eliminación de todas las Formas de Discriminación Racial
         </h1>
@@ -20,22 +20,13 @@
             resolución 2106 A (XX), de 21 de diciembre de 1965</h2>
 
         <h2>Entrada en vigor: 4 de enero de 1969, de conformidad con el artículo 19</h2>
+        
     </header>
+    <div id="home">
+        <a href=" /index.html">Volver a la pagina principal</a>
+    </div>
     <nav id="inicio">
-        <!--Buscador-->
-        <div id="buscador" class="tabcontent">
-            <h3>Buscador</h3>
-            <div>
-                <input type="search" id="searcher" inputmode='numeric' maxlength="4" minlength="1"
-                    onsearch="mySearcher()" placeholder="Número a buscar...">
-
-
-                <a id="spn">Buscar por artículo</a>
-
-            </div>
-        </div>
-
-
+    
         <!--Indice-->
         <div id="indice">
             <h3>Indice</h3>
@@ -895,7 +886,27 @@
 
     </main>
     <footer>
+        <!--Buscador-->
+        <div id="buscador" class="tabcontent">
 
+            <input type="search" id="searcher" maxlength="4" inputmode='numeric' minlength="1"
+                onsearch="mySearcher()" placeholder="Número a buscar...">
+
+
+            <a id="spn">Buscar por artículo</a>
+
+
+        </div>
+
+        <div id="lector">
+            <p>Primero seleccione el texto a leer y después presione leer</p>
+            <div>
+                <button onclick="play()">Leer</button>
+                <button onclick="stopSpeak()">Parar</button>
+                <button onclick="pause()">Pausar</button>
+                <button onclick="resume()">Retomar</button>
+            </div>
+        </div>
     </footer>
 
 </body>
