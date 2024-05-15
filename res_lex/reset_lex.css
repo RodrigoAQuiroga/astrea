@@ -142,7 +142,7 @@ h2 {
 }
 
 #home a::before {
-    content: url(/icons/house.svg);
+    content: url(../icons/house.svg);
     margin-right: 0.5rem;
 }
 

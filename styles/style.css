@@ -147,43 +147,43 @@ section:last-child {
 
 
 h4::before {
-    content: url(/icons/bookmark-fill.svg);
+    content: url(../icons/bookmark-fill.svg);
     margin: 0.5rem;
 }
 
 section a::after {
-    content: url(/icons/box-arrow-up-right.svg);
+    content: url(../icons/box-arrow-up-right.svg);
     margin: 0.5rem;
 }
 
 summary::before {
-    content: url(/icons/search.svg);
+    content: url(../icons/search.svg);
     margin: 0.5rem;
 }
 
 
 #laws h3::before {
-    content: url(/icons/bank.svg);
+    content: url(../icons/bank.svg);
     margin: 0.5rem;
 }
 
 #shortcuts h3::before {
-    content: url(/icons/bookmark-star.svg);
+    content: url(../icons/bookmark-star.svg);
     margin: 0.5rem;
 }
 
 #docs h3::before {
-    content: url(/icons/book-half.svg);
+    content: url(../icons/book-half.svg);
     margin: 0.5rem;
 }
 
 #reps h3::before {
-    content: url(/icons/vector-pen.svg);
+    content: url(../icons/vector-pen.svg);
     margin: 0.5rem;
 }
 
 #software h3::before {
-    content: url(/icons/pc-display.svg);
+    content: url(../icons/pc-display.svg);
     margin: 0.5rem;
 }
 
