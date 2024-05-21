@@ -20,7 +20,7 @@ nav {
 
 main {
     color: #F3F5FC;
-    width: 85dvw;
+    width: 90dvw;
     margin: auto;
     margin-bottom: 11rem;
     overflow: auto;
@@ -192,4 +192,8 @@ h5 {
 
 h3, h4, h5{
     color: orange;
+}
+
+li{
+    padding-bottom: 1rem;
 }
