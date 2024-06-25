@@ -77,3 +77,8 @@ dd li {
     border: none;
     margin: 0;
 }
+
+i{
+    font-weight: bold;
+    color: #eb7777;
+}
