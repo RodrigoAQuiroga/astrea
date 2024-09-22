@@ -1,0 +1,152 @@
+@import url(./animacion.css);
+@import url(./reset.css);
+
+
+
+
+/*Tags Específicos*/
+
+*::selection {
+    color: #16161d;
+    background-color: #ccc;
+}
+
+#shortcuts h3 {
+    margin-top: 0;
+}
+
+nav a {
+    color: #F3F5FC;
+    border-bottom: solid 1px orange;
+}
+
+main a:hover {
+    border-bottom: solid 2px orange;
+    font-weight: bolder;
+}
+
+summary:hover {
+    color: #0A3871;
+}
+
+footer * {
+    color: #F3F5FC;
+}
+
+footer a {
+    color: #F3F5FC;
+    border-bottom: solid 1px orange;
+
+}
+
+footer h3 {
+    padding: 1rem;
+}
+
+section:last-child {
+    border-bottom: none;
+    padding-bottom: 1rem;
+}
+
+
+h4::before {
+    content: url(../sources/icons/bookmark-fill.svg);
+    margin: 0.5rem;
+}
+
+section a::after {
+    content: url(../sources/icons/box-arrow-up-right.svg);
+    margin: 0.5rem;
+}
+
+summary::before {
+    content: url(../sources/icons/search.svg);
+    margin: 0.5rem;
+}
+
+
+#shortcuts h3::before {
+    content: url(../sources/icons/bank.svg);
+    margin: 0.5rem;
+}
+
+#leyes h3::before {
+    content: url(../sources/icons/bookmark-star.svg);
+    margin: 0.5rem;
+}
+
+#docs h3::before {
+    content: url(../sources/icons/book-half.svg);
+    margin: 0.5rem;
+}
+
+#reps h3::before {
+    content: url(../sources/icons/vector-pen.svg);
+    margin: 0.5rem;
+}
+
+#software h3::before {
+    content: url(../sources/icons/pc-display.svg);
+    margin: 0.5rem;
+}
+
+
+
+.card_docs a {
+    align-self: end;
+}
+
+/*Class*/
+
+#contacto {
+    width: 90dvw;
+    margin: auto;
+}
+
+#docs, #reps, #software {
+    h4 {
+        background-color: #072a55;
+        padding: 1rem;
+        color: #F3F5FC;
+    }
+}
+
+
+
+.card_docs {
+    display: flex;
+    flex-direction: column;
+    width: 90dvw;
+    margin: auto;    
+    padding: 0 1rem;
+}
+
+input {
+    width: 95%;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: large;
+    border-radius: 0.5rem;
+}
+
+.contenedorLinks {
+    border: solid 1px;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0 0 1rem 1rem;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    a {
+        margin: 0 1rem;
+        text-wrap: balance;
+    }
+
+}
+

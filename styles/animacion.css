@@ -1,0 +1,50 @@
+/*Animación*/
+@keyframes blink {
+
+    0%,
+    20% {
+        color: transparent;
+    }
+
+    30% {
+        content: "aprender;";
+        color: orange;
+    }
+
+    40% {
+        color: transparent;
+
+    }
+
+    50% {
+        content: "enseñar;";
+        color: orange;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    70%,
+    80% {
+        content: "servir;";
+        color: orange;
+    }
+
+    90%,
+    100% {
+        color: transparent;
+    }
+
+
+
+}
+
+h1::after {
+    content: "";
+    animation: blink 15s linear infinite;
+    font-family: monospace;
+    -o-animation: blink 15s linear infinite;
+    -moz-animation: blink 15s linear infinite;
+    -webkit-animation: blink 15s linear infinite;
+}

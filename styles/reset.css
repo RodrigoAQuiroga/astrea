@@ -1,10 +1,11 @@
+/*Sections*/
 body {
     margin: 0;
     background-color: #16161d;
 }
 
 header,
-nav{
+nav {
     padding: 1rem;
 }
 
@@ -23,14 +24,15 @@ nav {
     flex-wrap: wrap;
 
 }
-main{
+
+main {
     background-color: #F3F5FC;
 }
 
 footer {
-    background-color: #16161d;   
-    margin-top: 1rem;            
-    
+    background-color: #16161d;
+    margin-top: 1rem;
+
 }
 
 
@@ -65,7 +67,7 @@ a {
     flex-grow: 1;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.5rem;
+    padding: 1rem;
     border-bottom: solid 2px #0A3871;
     display: inline-block;
     margin: 0 0.5rem;
@@ -79,21 +81,23 @@ section {
 }
 
 details {
-    margin: 1rem;
-    cursor: pointer;
-    border: solid 1px #16161d;
-    padding: 0.5rem;
+    margin: 1rem;    
+    border: solid 1px #16161d;    
     border-radius: 0.4rem;
-    padding-top: 0;
+    
 }
 
 summary {
     list-style-type: none;
     font-weight: bold;
     padding: 1rem;
+    cursor: pointer;
 }
 
 p {
     text-indent: 0.5rem;
     text-align: justify;
 }
+
+
+
